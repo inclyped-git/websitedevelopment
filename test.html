@@ -2,22 +2,24 @@
 <html>
 <head>
     <title>Test page</title>
-
-    <script type="javascript"></script>
+    <script>
+        function getQuote()
+        {
+            document.getElementById("quote").innerHTML="Inspirational quote";
+        }
+    </script>
 </head>
 
 <body>
-
-<h1>
-    Welcome to our website: here we will give you random motivational quotes
+<h1 style="text-align:center">
+    Welcome to our website<br>Here we will give you random motivational quotes!
 </h1>
 
-<p class="quote"></p>
+<br><br><br>
+
+<p id="quote" style="text-align:center;"></p>
+<script>getQuote();</script>
 
 </body>
-
-
-
-
 
 </html>
