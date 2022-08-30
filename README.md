@@ -1,5 +1,1 @@
-# websitedevelopment
-A repository that keeps track of the website creation and editing.
-
-
-< need to be edited later. >
+This repository keeps track of personal changes. This doesn't represent the final changes of the product. 
