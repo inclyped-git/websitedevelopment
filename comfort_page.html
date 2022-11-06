@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-y:scroll;">
 
 <head>
 
     <title>Comfort</title>
 
+<script>
+    function getComfort() 
+    {
+        var comfort = "You are loved. Easier times are ahead";
+        document.getElementById("comfortWords").innerHTML = comfort;
+    }
 </script>
 
 </head>
 
-<body>
+<body style="overflow:auto; background-image: url(images/yellow_field.jpg); background-size: cover; background-repeat: no-repeat; text-align: center; margin:0;">
+    <!--When the tab is too small, the bottom of the window is white, should have a colour or smth to fill that-->
+
+
+<nav style=" display:flex; width: 100%; background-color: grey; text-align: center; background-attachment:fixed; top: 0; margin: 0;">
+<div style="font-size: 20px ;width:100%; text-align: center; margin:0; justify-content: space-around; padding: 20px 0;">
+    <a href="main_page.html" style="padding: 10px 4rem;;">Main</a>
+    <a href="tree_hole.html" style="padding: 10px 4rem;">Tree Hole</a>
+    <a href="test.html" style="padding: 10px 4rem;">About Us</a>
+</div>
+</nav>
+
+<header><h1>Comfort Page</h1></header>
 
 <br><br>
 
-<p style="text-align: center;">
-    You are doing great!
-    <br>
-    You got this!
-    <br>
-    You are loved!
-</p>
+
+<div style="text-align: center; size: 50px;">
+    <p id="comfortWords" style="text-align: center;">
+        You are doing great!
+        <br>
+        You got this!
+        <br>
+        You are loved!
+    </p>
+
+    <!--<br><br><br><br><br><br><br><br><br><br>
+        -->
+    <p>
+    <button onclick="getComfort();" style="border:1;">
+        Refresh
+    </button>
+    </p>
+</div>
 
 </body>
 
