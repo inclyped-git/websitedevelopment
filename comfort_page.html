@@ -13,19 +13,50 @@
     }
 </script>
 
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a.navbar {
+        padding: 20px 0;
+    }
+
+    a:hover {
+        background-color: darkslategray;
+    }
+
+    .selected {
+        background-color: lightgrey;
+    }
+
+</style>
+
 </head>
 
 <body style="overflow:auto; background-image: url(images/yellow_field.jpg); background-size: cover; background-repeat: no-repeat; text-align: center; margin:0;">
     <!--When the tab is too small, the bottom of the window is white, should have a colour or smth to fill that-->
 
 
-<nav style=" display:flex; width: 100%; background-color: grey; text-align: center; background-attachment:fixed; top: 0; margin: 0;">
-<div style="font-size: 20px ;width:100%; text-align: center; margin:0; justify-content: space-around; padding: 20px 0;">
-    <a href="main_page.html" style="padding: 10px 4rem;;">Main</a>
-    <a href="tree_hole.html" style="padding: 10px 4rem;">Tree Hole</a>
-    <a href="test.html" style="padding: 10px 4rem;">About Us</a>
-</div>
+<div style="background-color: grey; width:100%; display:flow-root;">
+<nav style="background-color: grey; text-align: center; background-attachment:fixed; top: 0; margin: 0; display: block;">
+    <ul style="width:100%; position: relative; margin: 0; padding:0;list-style-type: none; display: block; background-color: grey; font-size: 25px;">
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="main_page.html" style="display:block">Main</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="tree_hole.html" style="display:block">Tree Hole</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar selected" href="comfort_page.html" style="display:block">Tree Hole</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="test.html" style="display:block">About Us</a>
+        </li>
+    </ul>
 </nav>
+</div>
 
 <header><h1>Comfort Page</h1></header>
 
