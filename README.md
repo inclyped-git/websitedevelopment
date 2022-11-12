@@ -3,7 +3,7 @@ A repository that keeps track of the website creation and editing.
 
 
 ## Comfort Page
----
+
 A page that will contain comfort words and quotes for the user. 
 
 Features:
@@ -14,7 +14,7 @@ Features:
 
 
 ## Tree Hole
----
+
 A page that will comfort the user.
 
 Features:
