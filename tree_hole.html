@@ -11,27 +11,135 @@
         document.getElementById("saying").innerHTML = "I am great!";
     }
 
+    function listen()
+    {
+        var text = "";
+        var audio = document.getElementById("listen").innerHTML;
+        if (audio == "Listening")
+        {
+            
+            audio = "Audio Sign";
+        }
+        else
+        {
+            audio = "Listening";
+        }
+        document.getElementById("listen").innerHTML = audio;
+
+    }
+
 </script>
+
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a.navbar {
+        padding: 20px 0;
+    }
+
+    a:hover {
+        background-color: darkslategray;
+    }
+
+    .selected {
+        background-color: lightgrey;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: white;
+    }
+
+    .refresh {
+        padding: 8px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        background-color:pink;
+        border: 1px solid black;
+    }
+
+    button#treehole {
+        background-color: rgb(165, 42, 42);
+        font-size: large;
+        padding: 120px 90px;
+        border-radius: 100%;
+    }
+
+    button#treehole:hover{
+        cursor: pointer;
+    }
+
+    #listen {
+        background-color: rgb(165, 42, 42);
+        font-size: medium;
+        padding: 20px 10px;
+        border-radius: 100%;
+    }
+    #listen:hover
+    {
+        cursor: pointer;
+    }
+
+
+</style>
+
 
 </head>
 
-<body>
+<body style="overflow:auto; background-image: url(images/tree.jpg); background-size: cover; background-repeat: no-repeat; text-align: center; margin:0;">
 
-<p style="text-align: center;">
+<div style="background-color: grey; width:100%; display:flow-root;">
+<nav style="background-color: grey; text-align: center; background-attachment:fixed; top: 0; margin: 0; display: block;">
+    <ul style="width:100%; position: relative; margin: 0; padding:0;list-style-type: none; display: block; background-color: grey; font-size: 25px;">
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="main_page.html" style="display:block">Main</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar selected" href="tree_hole.html" style="display:block">Tree Hole</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="comfort_page.html" style="display:block">Comfort Page</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="test.html" style="display:block">About Us</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<div style="height:170px">
+<header style="text-align: center; height: 100px">
+<h1>
+    <span style="background-color: rgba(165, 42, 42, 0.5); padding: 20px 20px;">Comfort Page</span>
+</h1>
+</header>
+
+
+<p style="text-align: center;"  >
+    <span id="saying" style="background-color: rgba(255, 192, 203, 0.8);" >
     You are doing great!
     <br>
     You got this!
+    </span>   
 </p>
 
-<div style="text-align: center;">
-<button onclick="say();">
-    Tree hole
-</button>
-<p id="saying"></p>
 </div>
 
+<div style="text-align: center;">
+    <button id="treehole" onclick="say();">
+        Tree Hole
+    </button>
+</div>
 
+<br><br>
 
+<p>
+<button id="listen" onclick="listen();">
+    Audio Sign
+</button>
 </body>
 
 
