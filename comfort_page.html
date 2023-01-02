@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html style="overflow-y:scroll;">
+
+<head>
+
+    <title>Comfort</title>
+
+<script>
+    function getComfort() 
+    {
+        var comfort = "You are loved. Easier times are ahead";
+        document.getElementById("comfortWords").innerHTML = comfort;
+    }
+</script>
+
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a.navbar {
+        padding: 20px 0;
+    }
+
+    a:hover {
+        background-color: darkslategray;
+    }
+
+    .selected {
+        background-color: lightgrey;
+    }
+
+    h1 {
+        padding: 20px 0px;
+        font-size: 50px;
+    }
+
+    .refresh {
+        padding: 8px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        background-color:pink;
+        border: 1px solid black;
+    }
+
+
+</style>
+
+</head>
+
+<body style="overflow:auto; background-image: url(images/yellow_field.jpg); background-size: cover; background-repeat: no-repeat; text-align: center; margin:0;">
+    <!--When the tab is too small, the bottom of the window is white, should have a colour or smth to fill that-->
+
+
+<div style="background-color: grey; width:100%; display:flow-root;">
+<nav style="background-color: grey; text-align: center; background-attachment:fixed; top: 0; margin: 0; display: block;">
+    <ul style="width:100%; position: relative; margin: 0; padding:0;list-style-type: none; display: block; background-color: grey; font-size: 25px;">
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="main_page.html" style="display:block">Main</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="tree_hole.html" style="display:block">Tree Hole</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar selected" href="comfort_page.html" style="display:block">Comfort Page</a>
+        </li>
+        <li style="float:left; width:25%;">
+            <a class="navbar" href="test.html" style="display:block">About Us</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<div style="height:400px">
+<header><h1>Comfort Page</h1></header>
+
+<br><br>
+
+
+<div style="text-align: center; height: 30%;">
+    <p id="comfortWords" style="text-align: center;">
+        You are doing great!
+        <br>
+        You got this!
+        <br>
+        You are loved!
+    </p>
+
+    <!--<br><br><br><br><br><br><br><br><br><br>
+        -->
+</div>
+</div>
+
+<div style="height:50%">
+        <button class="refresh" onclick="getComfort();" style="border:1;">
+            Refresh
+        </button>
+</div>
+
+</body>
+
+</html>
